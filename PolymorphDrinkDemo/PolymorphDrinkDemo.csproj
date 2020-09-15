@@ -32,6 +32,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Drinks\Drink.cs" />
+    <Compile Include="Drinks\Beer.cs" />
+    <Compile Include="Drinks\Juice.cs" />
+    <Compile Include="Drinks\Soda.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Drinks\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
