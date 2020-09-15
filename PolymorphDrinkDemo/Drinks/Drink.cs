@@ -1,5 +1,4 @@
-﻿using System;
-namespace PolymorphDrinkDemo.Drinks
+﻿namespace PolymorphDrinkDemo.Drinks
 {
     public class Drink
     {
@@ -10,7 +9,11 @@ namespace PolymorphDrinkDemo.Drinks
             this.IsCarbonated = isCarbonated;
         }
         public string Name { get; set; }
-        public bool IsCarbonated { get; set; } 
-        public virtual string Description { get;}
+        public bool IsCarbonated { get; set; }
+        public virtual string Description
+        {
+            get =>
+                $@"{Name}, {(IsCarbonated ? "" : "not ")}carbonated.";
+        }
     }
 }

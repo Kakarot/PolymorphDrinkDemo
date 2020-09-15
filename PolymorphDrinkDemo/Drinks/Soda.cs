@@ -1,10 +1,11 @@
-﻿using System;
-namespace PolymorphDrinkDemo.Drinks
+﻿namespace PolymorphDrinkDemo.Drinks
 {
-    public class Soda
+    public class Soda : Drink
     {
-        public Soda()
-        {
-        }
+        public Soda(string name, bool isCarbonated) : base(name, isCarbonated)
+        { }
+
+        //No need to override the description property since the base class is good enough
+
     }
 }
